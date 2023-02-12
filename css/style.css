@@ -460,12 +460,15 @@ th {
   .header #header-nav {
     display: none;
     background-color: #F8F8F8;
+    max-width: calc(100vw - 40px);
     width: 100%;
     position: absolute;
-    top: 80px;
-    left: 0;
+    top: 120px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     text-align: center;
-    z-index: 1002;
+    z-index: 1004;
     height: auto;
     overflow: scroll;
     max-height: 100vh;
@@ -551,6 +554,7 @@ th {
     font-size: 15px;
     line-height: 1.2;
     padding: 15px 0;
+    color: #000000;
   }
 }
 .header #header-nav > ul > li > a:hover {
@@ -564,7 +568,7 @@ th {
   position: relative;
   width: 26px;
   height: 24px;
-  z-index: 1002;
+  z-index: 1004;
 }
 @media screen and (max-width: 960px) {
   .header #header-toggle {
@@ -603,6 +607,17 @@ th {
 .header #header-toggle.act span:nth-child(3) {
   -webkit-transform: translateY(-11px) rotate(45deg);
           transform: translateY(-11px) rotate(45deg);
+}
+.header #header-bg {
+  display: none;
+  opacity: 0.5;
+  z-index: 1002;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
 }
 
 #hero {

@@ -30,6 +30,8 @@
 @import "module/hero";
 // top-heading
 @import "module/top-heading";
+// page-heading
+@import "module/page-heading";
 // btn
 @import "module/btn";
 // contact
@@ -47,7 +49,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
 /*
- * トップページ
+ * ページ
  * -------------------------------------------------------------------
  */
 // トップページ - わたしについて
@@ -56,3 +58,5 @@
 @import "page/top-works";
 // トップページ - ブログ
 @import "page/top-blog";
+// Aboutページ
+@import "page/about";

@@ -1,0 +1,11 @@
+.page-heading{
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $color_gray;
+    @include responsive("smp") {
+        font-size: 43px;
+    }
+}

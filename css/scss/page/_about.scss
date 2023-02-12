@@ -1,0 +1,85 @@
+.about{
+    @include container();
+    margin-top: 60px;
+    &__inner{
+        background-color: $color_gray_light;
+        border-radius: 5px;
+        padding: 0 60px 80px;
+        @include responsive("tb") {
+            padding: 0 20px 60px;
+        }
+    }
+    &__box{
+        display: inline-block;
+        width: 100%;
+        margin-top: -26px;
+        @include responsive("tb") {
+            margin-top: -21px;
+        }
+    }
+    &-me{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        @include responsive("tb") {
+            flex-wrap: wrap-reverse;
+        }
+        &__desc{
+            width: 370px;
+            @include responsive("tb") {
+                width: 100%;
+            }
+        }
+        &__name{
+            margin-bottom: 30px;
+            @include responsive("tb") {
+                margin-bottom: 20px;
+            }
+            &-sub{
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: 0.13em;
+                margin-bottom: 12px;
+                @include responsive("smp") {
+                    font-size: 11px;
+                    margin-bottom: 10px;
+                }
+            }
+            &-main{
+                font-size: 33px;
+                font-weight: 700;
+                letter-spacing: 0.11em;
+                line-height: 1;
+                font-family: 'Roboto Mono', monospace;
+                @include responsive("tb") {
+                    font-size: 30px
+                }
+            }
+        }
+        &__list{
+            display: flex;
+            align-items: flex-start;
+            gap: 10.8108108%;
+            & p{
+                line-height: 2.333333;
+                @include responsive("smp") {
+                    font-size: 13px;
+                }
+            }
+        }
+        &__image{
+            width: 45.2380952%;
+            @include responsive("tb") {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            & img{
+                border-radius: 15px;
+            }
+        }
+    }
+}

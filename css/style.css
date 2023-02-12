@@ -26,14 +26,6 @@ a {
   outline: none;
 }
 
-/*
- * wrapper
- * -------------------------------------------------------------------
- */
-#wrapper {
-  min-height: 100vh;
-}
-
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -421,11 +413,41 @@ th {
  * Module
  * -------------------------------------------------------------------
  */
-.header {
+#top .header {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1000;
+}
+#top .header #header-nav > ul > li > a {
+  color: #ffffff;
+  opacity: 1;
+}
+#top .header #header-nav > ul > li > a:hover {
+  opacity: 0.4;
+}
+#top .header #header-nav > ul > li > a:active {
+  opacity: 0.4;
+}
+#top .header #header-toggle > span {
+  background-color: #ffffff;
+}
+
+#about > .header #header-nav > ul > li > a {
+  color: #000000;
+  opacity: 0.4;
+}
+#about > .header #header-nav > ul > li > a:hover {
+  opacity: 1;
+}
+#about > .header #header-nav > ul > li > a:active {
+  opacity: 1;
+}
+#about > .header #header-toggle > span {
+  background-color: #000000;
+}
+
+.header {
   width: 100%;
 }
 .header__container {
@@ -540,7 +562,6 @@ th {
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
-  color: #ffffff;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 0.15em;
   -webkit-transition: all 0.2s;
@@ -556,12 +577,6 @@ th {
     padding: 15px 0;
     color: #000000;
   }
-}
-.header #header-nav > ul > li > a:hover {
-  opacity: 0.4;
-}
-.header #header-nav > ul > li > a:active {
-  opacity: 0.4;
 }
 .header #header-toggle {
   display: none;
@@ -581,7 +596,6 @@ th {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #fff;
   border-radius: 4px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -683,6 +697,20 @@ th {
     font-weight: 500;
     margin-top: 13px;
     background-size: 10px 1px;
+  }
+}
+
+.page-heading {
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  line-height: 1;
+  font-family: "Josefin Sans", sans-serif;
+  color: #999999;
+}
+@media screen and (max-width: 520px) {
+  .page-heading {
+    font-size: 43px;
   }
 }
 
@@ -972,7 +1000,7 @@ th {
  * -------------------------------------------------------------------
  */
 /*
- * トップページ
+ * ページ
  * -------------------------------------------------------------------
  */
 .top-about {
@@ -1147,4 +1175,129 @@ th {
 }
 .top-blog__link .btn-01 {
   margin: 0 auto;
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 60px;
+}
+.about__inner {
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  padding: 0 60px 80px;
+}
+@media screen and (max-width: 768px) {
+  .about__inner {
+    padding: 0 20px 60px;
+  }
+}
+.about__box {
+  display: inline-block;
+  width: 100%;
+  margin-top: -26px;
+}
+@media screen and (max-width: 768px) {
+  .about__box {
+    margin-top: -21px;
+  }
+}
+.about-me {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .about-me {
+    -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+  }
+}
+.about-me__desc {
+  width: 370px;
+}
+@media screen and (max-width: 768px) {
+  .about-me__desc {
+    width: 100%;
+  }
+}
+.about-me__name {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .about-me__name {
+    margin-bottom: 20px;
+  }
+}
+.about-me__name-sub {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.13em;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 520px) {
+  .about-me__name-sub {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+}
+.about-me__name-main {
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1;
+  font-family: "Roboto Mono", monospace;
+}
+@media screen and (max-width: 768px) {
+  .about-me__name-main {
+    font-size: 30px;
+  }
+}
+.about-me__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10.8108108%;
+}
+.about-me__list p {
+  line-height: 2.333333;
+}
+@media screen and (max-width: 520px) {
+  .about-me__list p {
+    font-size: 13px;
+  }
+}
+.about-me__image {
+  width: 45.2380952%;
+}
+@media screen and (max-width: 768px) {
+  .about-me__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.about-me__image img {
+  border-radius: 15px;
 }/*# sourceMappingURL=style.css.map */

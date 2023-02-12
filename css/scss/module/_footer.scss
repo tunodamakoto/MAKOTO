@@ -1,0 +1,82 @@
+.footer{
+    @include container();
+    margin-top: 200px;
+    margin-bottom: 40px;
+    @include responsive("smp") {
+        margin-top: 70px;
+    }
+    &__image{
+        margin-bottom: 15px;
+        &>a{
+            display: block;
+            @include responsive("tb") {
+                text-align: center;
+            }
+            &>svg{
+                width: 147px;
+                height: 36px;
+                @include responsive("smp") {
+                    width: 121px;
+                    height: 31px;
+                }
+            }
+        }
+        & svg{
+            width: 147px;
+            height: 36px;
+        }
+    }
+    &__desc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive("tb") {
+            flex-wrap: wrap;
+        }
+    }
+    &__menu{
+        @include responsive("tb") {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        &>ul{
+            display: flex;
+            justify-content: start;
+            margin: auto;
+            height: 100%;
+            @include responsive("tb") {
+                justify-content: center;
+            }
+            &>li{
+                padding: 0 15px;
+                &:nth-child(1){
+                    padding: 0 15px 0 0;
+                }
+                &>a{
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 1;
+                    font-family: 'Roboto Mono', monospace;
+                    letter-spacing: .15em;
+                    @include transition();
+                    &:hover{
+                        opacity: .4;
+                    }
+                    &:active{
+                        opacity: .4;
+                    }
+                }
+            }
+        }
+    }
+    &__copy{
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1;
+        @include responsive("tb") {
+            width: 100%;
+            text-align: center;
+            font-size: 11px;
+        }
+    }
+}

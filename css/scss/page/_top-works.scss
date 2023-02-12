@@ -1,0 +1,39 @@
+// top-works
+.top-works{
+    @include container();
+    margin-top: 200px;
+    @include responsive("smp") {
+        margin-top: 100px;
+    }
+    &__heading{
+        margin-bottom: 30px;
+        @include responsive("smp") {
+            margin-bottom: 24px;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image{
+        max-width: 31.25%;
+        & img{
+            border-radius: 5px;
+        }
+        @include responsive("tb") {
+            max-width: 47.8515625%;
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        margin-top: 30px;
+        @include responsive("tb") {
+            padding: 0 20px;
+        }
+        & .btn-01{
+            margin: 0 auto;
+        }
+    }
+}

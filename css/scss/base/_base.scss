@@ -1,0 +1,30 @@
+/*
+ * HTML
+ * -------------------------------------------------------------------
+ */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: $base_font_size;
+    line-height: $base_line_height;
+    letter-spacing: $base_letter_spacing;
+    background-color: $color_white;
+    color: $color_black;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+/*
+ * wrapper
+ * -------------------------------------------------------------------
+ */
+#wrapper{
+    padding-top: 10px;
+    min-height: 100vh;
+}

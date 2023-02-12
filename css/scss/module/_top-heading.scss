@@ -1,0 +1,28 @@
+.top-heading{
+    &__main{
+        font-size: 43px;
+        font-weight: 600;
+        letter-spacing: 0.11em;
+        line-height: 1;
+        font-family: 'Josefin Sans', sans-serif;
+        @include responsive("smp") {
+            font-size: 30px;
+        }
+    }
+    &__sub{
+        line-height: 1;
+        font-weight: 700;
+        margin-top: 12px;
+        padding-left: 20px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+        background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+        background-repeat: no-repeat;
+        background-position: 0 0.4em;
+        background-size: 10px 2px;
+        @include responsive("smp") {
+            font-size: 13px;
+            margin-top: 7px;
+            background-size: 10px 1px;
+        }
+    }
+}

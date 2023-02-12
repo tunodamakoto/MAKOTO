@@ -1,0 +1,12 @@
+// container
+@mixin container($type: "default") {
+    @if $type == "default" {
+        max-width: $content_width;
+        margin: 0 auto;
+        padding: 0 20px;
+    } @else if $type == "hero" {
+        max-width: $content_width;
+        margin: 0 auto;
+        position: relative;
+    }
+}

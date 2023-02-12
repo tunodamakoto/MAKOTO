@@ -1255,7 +1255,7 @@ th {
 @media screen and (max-width: 520px) {
   .about-me__name-sub {
     font-size: 11px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 }
 .about-me__name-main {
@@ -1267,7 +1267,7 @@ th {
 }
 @media screen and (max-width: 768px) {
   .about-me__name-main {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 .about-me__list {

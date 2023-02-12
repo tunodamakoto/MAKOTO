@@ -1300,4 +1300,18 @@ th {
 }
 .about-me__image img {
   border-radius: 15px;
+}
+.about-text > p {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 520px) {
+  .about-text > p {
+    font-size: 13px;
+  }
+}
+.about-text > p:last-child {
+  margin-bottom: 0;
+}
+.about-profile {
+  margin: 100px 0 70px;
 }/*# sourceMappingURL=style.css.map */

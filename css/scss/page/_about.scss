@@ -82,4 +82,18 @@
             }
         }
     }
+    &-text{
+        &>p{
+            margin-bottom: 15px;
+            @include responsive("smp") {
+                font-size: 13px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-profile{
+        margin: 100px 0 70px;
+    }
 }

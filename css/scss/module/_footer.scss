@@ -13,11 +13,11 @@
                 text-align: center;
             }
             &>svg{
-                width: 147px;
-                height: 36px;
+                width: 140px;
+                height: 21px;
                 @include responsive("smp") {
-                    width: 121px;
-                    height: 31px;
+                    width: 119px;
+                    height: 18px;
                 }
             }
         }

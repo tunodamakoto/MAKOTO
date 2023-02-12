@@ -682,7 +682,6 @@ th {
     font-size: 12px;
     font-weight: 500;
     margin-top: 13px;
-    background-position: 0 0.5em;
     background-size: 10px 1px;
   }
 }
@@ -790,34 +789,54 @@ th {
 }
 .contact__inner {
   background-color: #F8F8F8;
-  padding: 80px 20px 70px;
-  border-radius: 15px;
+  padding: 0 20px 70px;
+  border-radius: 5px;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .contact__inner {
-    padding: 50px 20px;
+    padding: 0 20px 40px;
+  }
+}
+.contact__box {
+  display: inline-block;
+  margin-top: -26px;
+}
+@media screen and (max-width: 768px) {
+  .contact__box {
+    margin-top: -21px;
   }
 }
 .contact__heading {
   font-size: 52px;
   font-weight: 600;
   letter-spacing: 0.13em;
+  line-height: 1;
   font-family: "Josefin Sans", sans-serif;
-  position: absolute;
-  top: -16%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .contact__heading {
     font-size: 43px;
-    top: -19%;
+    margin-bottom: 25px;
   }
 }
 .contact__btn {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .contact__btn {
+    margin-bottom: 25px;
+  }
 }
 .contact__text {
   text-align: center;

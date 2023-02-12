@@ -6,29 +6,40 @@
     }
     &__inner{
         background-color: $color_gray_light;
-        padding: 80px 20px 70px;
-        border-radius: 15px;
+        padding: 0 20px 70px;
+        border-radius: 5px;
         position: relative;
+        display: flex;
+        justify-content: center;
         @include responsive("tb") {
-            padding: 50px 20px;
+            padding: 0 20px 40px;
+        }
+    }
+    &__box{
+        display: inline-block;
+        margin-top: -26px;
+        @include responsive("tb") {
+            margin-top: -21px;
         }
     }
     &__heading{
         font-size: 52px;
         font-weight: 600;
         letter-spacing: 0.13em;
+        line-height: 1;
         font-family: 'Josefin Sans', sans-serif;
-        position: absolute;
-        top: -16%;
-        left: 50%;
-        transform: translateX(-50%);
+        text-align: center;
+        margin-bottom: 50px;
         @include responsive("tb") {
             font-size: 43px;
-            top: -19%;
+            margin-bottom: 25px;
         }
     }
     &__btn{
         margin-bottom: 40px;
+        @include responsive("tb") {
+            margin-bottom: 25px;
+        }
     }
     &__text{
         text-align: center;

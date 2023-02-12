@@ -2,9 +2,13 @@
     @include container("hero");
     max-height: 495px;
     min-height: 495px;
+    @include responsive("tb") {
+        max-height: 374px;
+        min-height: 374px;
+    }
     @include responsive("smp") {
-        max-height: 608px;
-        min-height: 608px;
+        max-height: 247px;
+        min-height: 247px;
     }
     & .bx-wrapper{
         width: 100%;
@@ -13,8 +17,11 @@
         top: 0;
         left: 0;
         padding: 0 20px;
+        @include responsive("tb") {
+            height: 374px;
+        }
         @include responsive("smp") {
-            height: 608px;
+            height: 247px;
         }
         & .bx-viewport{
             width: 100% !important;
@@ -31,40 +38,6 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     border-radius: 15px;
-                }
-            }
-        }
-    }
-    & .hero__sns{
-        position: absolute;
-        bottom: -1px;
-        right: 19px;
-        background-color: $color_white;
-        padding: 20px;
-        max-width: 280px;
-        width: 100%;
-        border-radius: 15px 0 0 0;
-        z-index: $z-index_hero_sns;
-        &>ul{
-            display: flex;
-            justify-content: space-between;
-            max-width: 170px;
-            margin: auto;
-            &>li{
-                &>a{
-                    display: block;
-                    &:hover svg{
-                        opacity: 1;
-                    }
-                    &:active svg{
-                        opacity: 1;
-                    }
-                }
-                & svg{
-                    width: 40px;
-                    height: 40px;
-                    opacity: .4;
-                    @include transition();
                 }
             }
         }

@@ -229,7 +229,7 @@ object,
 iframe {
   width: 100%;
   height: auto;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 /* Forms */
@@ -425,7 +425,7 @@ th {
   background-color: #ffffff;
 }
 .header__container {
-  height: 8rem;
+  height: 80px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
@@ -443,10 +443,12 @@ th {
           justify-content: space-between;
   position: relative;
 }
-.header__logo > a {
-  display: block;
+@media screen and (max-width: 960px) {
+  .header__container {
+    height: 60px;
+  }
 }
-.header__logo > a > svg {
+.header__logo svg {
   width: 153px;
   height: 23px;
 }
@@ -605,10 +607,16 @@ th {
   max-height: 495px;
   min-height: 495px;
 }
+@media screen and (max-width: 768px) {
+  #hero {
+    max-height: 374px;
+    min-height: 374px;
+  }
+}
 @media screen and (max-width: 520px) {
   #hero {
-    max-height: 608px;
-    min-height: 608px;
+    max-height: 247px;
+    min-height: 247px;
   }
 }
 #hero .bx-wrapper {
@@ -619,9 +627,14 @@ th {
   left: 0;
   padding: 0 20px;
 }
+@media screen and (max-width: 768px) {
+  #hero .bx-wrapper {
+    height: 374px;
+  }
+}
 @media screen and (max-width: 520px) {
   #hero .bx-wrapper {
-    height: 608px;
+    height: 247px;
   }
 }
 #hero .bx-wrapper .bx-viewport {
@@ -641,45 +654,6 @@ th {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
-}
-#hero .hero__sns {
-  position: absolute;
-  bottom: -1px;
-  right: 19px;
-  background-color: #ffffff;
-  padding: 20px;
-  max-width: 280px;
-  width: 100%;
-  border-radius: 15px 0 0 0;
-  z-index: 998;
-}
-#hero .hero__sns > ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 170px;
-  margin: auto;
-}
-#hero .hero__sns > ul > li > a {
-  display: block;
-}
-#hero .hero__sns > ul > li > a:hover svg {
-  opacity: 1;
-}
-#hero .hero__sns > ul > li > a:active svg {
-  opacity: 1;
-}
-#hero .hero__sns > ul > li svg {
-  width: 40px;
-  height: 40px;
-  opacity: 0.4;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 .top-heading__main {

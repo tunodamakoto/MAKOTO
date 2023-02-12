@@ -1,20 +1,20 @@
 .header{
     background-color: $color_white;
     &__container{
-        height: $header_height;
+        height: 80px;
         @include container();
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
+        @include responsive("pc") {
+            height: 60px;
+        }
     }
     &__logo{
-        &>a{
-            display: block;
-            &>svg{
-                width: 153px;
-                height: 23px
-            }
+        & svg{
+            width: 153px;
+            height: 23px
         }
     }
     & #header-nav{

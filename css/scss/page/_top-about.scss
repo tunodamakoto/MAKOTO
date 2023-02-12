@@ -10,7 +10,6 @@
         width: 37.5%;
         @include responsive("tb") {
             width: 100%;
-            padding: 0 20px;
         }
     }
     &__heading{
@@ -24,6 +23,11 @@
         @include responsive("smp") {
             font-size: 14px;
             margin-bottom: 24px;
+        }
+    }
+    &__link{
+        @include responsive("tb") {
+            padding: 0 20px;
         }
     }
     &__image{

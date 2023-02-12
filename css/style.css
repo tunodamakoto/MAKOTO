@@ -666,6 +666,7 @@ th {
 }
 .top-heading__sub {
   line-height: 1;
+  letter-spacing: 0.13em;
   font-weight: 700;
   margin-top: 12px;
   padding-left: 20px;
@@ -679,7 +680,8 @@ th {
 @media screen and (max-width: 520px) {
   .top-heading__sub {
     font-size: 13px;
-    margin-top: 7px;
+    margin-top: 10px;
+    background-position: 0 0.5em;
     background-size: 10px 1px;
   }
 }
@@ -980,7 +982,6 @@ th {
 @media screen and (max-width: 768px) {
   .top-about__text {
     width: 100%;
-    padding: 0 20px;
   }
 }
 .top-about__heading {
@@ -998,6 +999,11 @@ th {
   .top-about__desc {
     font-size: 14px;
     margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top-about__link {
+    padding: 0 20px;
   }
 }
 .top-about__image {

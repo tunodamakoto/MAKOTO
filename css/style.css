@@ -679,8 +679,8 @@ th {
 }
 @media screen and (max-width: 520px) {
   .top-heading__sub {
-    font-size: 13px;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: 13px;
     background-position: 0 0.5em;
     background-size: 10px 1px;
   }

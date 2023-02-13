@@ -67,9 +67,9 @@ if($('body#about').length){
                         barColor: '#666666',
                         trackColor: '#CDCDCD',
                         animate: 5000,
-                        lineWidth: 8,
+                        lineWidth: 5,
                         size: 110,
-                        trackWidth: 6,
+                        trackWidth: 3,
                         scaleLength: 10,
                         scaleColor: false,
                     });

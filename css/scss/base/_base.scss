@@ -6,10 +6,12 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;
+    font-family: 'M PLUS 1', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: $base_font_size;
+    font-weight: 500;
     line-height: $base_line_height;
     letter-spacing: $base_letter_spacing;
     background-color: $color_white;

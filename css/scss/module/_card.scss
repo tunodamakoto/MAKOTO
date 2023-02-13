@@ -21,29 +21,31 @@
         }
         & a{
             position: relative;
-            &:hover{
-                & .card__view{
-                    transform: translate(-34%, -50%);
-                    opacity: 1;
-                    transition-delay: 0.3s;
-                    &-more{
-                        &::before{
-                            right: -5px;
-                            transition-delay: 0.3s;
-                        }
-                        &::after{
-                            right: -5px;
-                            transition-delay: 0.3s;
-                        }
-                    }
-                    &-underline::after{
-                        transform-origin: left top;
-                        transform: scale(1, 1);
+            @media screen and (min-width:960px) {
+                &:hover{
+                    & .card__view{
+                        transform: translate(-34%, -50%);
+                        opacity: 1;
                         transition-delay: 0.3s;
+                        &-more{
+                            &::before{
+                                right: -5px;
+                                transition-delay: 0.3s;
+                            }
+                            &::after{
+                                right: -5px;
+                                transition-delay: 0.3s;
+                            }
+                        }
+                        &-underline::after{
+                            transform-origin: left top;
+                            transform: scale(1, 1);
+                            transition-delay: 0.3s;
+                        }
                     }
-                }
-                & .card__image::after{
-                    opacity: 1;
+                    & .card__image::after{
+                        opacity: 1;
+                    }
                 }
             }
         }

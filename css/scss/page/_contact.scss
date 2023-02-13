@@ -1,0 +1,23 @@
+.contact{
+    @include container();
+    margin-top: 60px;
+    &__inner{
+        background-color: $color_gray_light;
+        border-radius: 5px;
+        padding: 0 20px 80px;
+        display: flex;
+        justify-content: center;
+        @include responsive("tb") {
+            padding: 0 20px 60px;
+        }
+    }
+    &__box{
+        display: inline-block;
+        max-width: 840px;
+        width: 100%;
+        margin-top: -26px;
+        @include responsive("tb") {
+            margin-top: -21px;
+        }
+    }
+}

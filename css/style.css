@@ -1925,4 +1925,40 @@ th {
   .works__box {
     margin-top: -21px;
   }
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 60px;
+}
+.contact__inner {
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  padding: 0 20px 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .contact__inner {
+    padding: 0 20px 60px;
+  }
+}
+.contact__box {
+  display: inline-block;
+  max-width: 840px;
+  width: 100%;
+  margin-top: -26px;
+}
+@media screen and (max-width: 768px) {
+  .contact__box {
+    margin-top: -21px;
+  }
 }/*# sourceMappingURL=style.css.map */

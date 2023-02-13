@@ -141,6 +141,9 @@
                 @include responsive("pc") {
                     padding-left: 6.37%;
                 }
+                @include responsive("tb") {
+                    width: 66.666666%;
+                }
                 &>li{
                     font-size: 14px;
                     padding-left: 15px;

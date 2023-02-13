@@ -1466,6 +1466,11 @@ th {
     padding-left: 6.37%;
   }
 }
+@media screen and (max-width: 768px) {
+  .about-profile__box > ul {
+    width: 66.666666%;
+  }
+}
 .about-profile__box > ul > li {
   font-size: 14px;
   padding-left: 15px;

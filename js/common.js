@@ -40,6 +40,7 @@ if($('body#about').length){
                 if (window.matchMedia('(min-width: 769px)').matches) {
                     $('.chart').easyPieChart({
                         easing: 'easeOutQuart',
+                        animate: 10000,
                         barColor: '#666666',
                         trackColor: '#CDCDCD',
                         animate: 5000,

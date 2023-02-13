@@ -906,12 +906,12 @@ th {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 15px 1%;
+    gap: 20px 2%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 520px) {
   .card {
-    gap: 10px 1%;
+    gap: 20px;
   }
 }
 .card-item {
@@ -920,14 +920,56 @@ th {
 }
 @media screen and (max-width: 768px) {
   .card-item {
-    width: 49%;
+    width: 48%;
     padding: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  .card-item {
+    width: 100%;
   }
 }
 .card-item a {
   position: relative;
 }
-.card-item a::after {
+.card-item a:hover .card__view {
+  -webkit-transform: translate(-34%, -50%);
+          transform: translate(-34%, -50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.card-item a:hover .card__view-more::before {
+  right: -5px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.card-item a:hover .card__view-more::after {
+  right: -5px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.card-item a:hover .card__view-underline::after {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.card-item a:hover .card__image::after {
+  opacity: 1;
+}
+.card__image {
+  display: block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.card__image::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -942,24 +984,6 @@ th {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.card-item a:hover .card__desc {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-}
-.card-item a:hover::after {
-  opacity: 1;
-}
-.card__image {
-  display: block;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 100%;
-  border-radius: 5px;
-}
 .card__image img {
   width: 100%;
   height: auto;
@@ -969,47 +993,97 @@ th {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.card__desc {
+.card__view {
   position: absolute;
-  max-width: 260px;
-  width: 100%;
-  padding: 0 7.366%;
-  bottom: -10%;
+  top: 44%;
   left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-          transform: translate(-50%, -20%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translate(-34%, -20%);
+          transform: translate(-34%, -20%);
+  opacity: 0;
   z-index: 1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  opacity: 0;
 }
-@media screen and (max-width: 768px) {
-  .card__desc {
-    bottom: 0;
-  }
+.card__view-more {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 20px;
+  font-weight: 700;
+}
+.card__view-more::before {
+  width: 10px;
+  content: "";
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card__view-more::after {
+  content: "";
+  height: 1px;
+  background-color: #dadada;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 6px;
+  -webkit-transform: rotate(45deg) translateY(-3px);
+          transform: rotate(45deg) translateY(-3px);
+}
+.card__view-underline {
+  position: relative;
+}
+.card__view-underline::after {
+  content: "";
+  background: #ffffff;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+.card__desc {
+  width: 100%;
 }
 .card__desc-main {
+  padding: 10px 10px 0;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 1;
-  margin-bottom: 10px;
-  color: #ffffff;
+  color: #000000;
 }
 @media screen and (max-width: 520px) {
   .card__desc-main {
-    margin-bottom: 6px;
-    font-size: 12px;
+    padding: 10px 0 0;
   }
 }
 .card__desc-sub {
   font-size: 13px;
+  font-weight: 700;
+  padding: 5px 10px 0px;
   line-height: 1;
-  color: #ffffff;
+  color: #999999;
 }
 @media screen and (max-width: 520px) {
   .card__desc-sub {
-    font-size: 12px;
+    padding: 5px 0 0;
   }
 }
 

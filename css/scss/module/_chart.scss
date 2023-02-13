@@ -44,10 +44,16 @@
                 height: 24px;
                 margin-bottom: 6px;
             }
+            @include responsive("smp") {
+                height: 20px;
+            }
         }
         & span{
             font-size: 12px;
             font-weight: 700;
+            @include responsive("smp") {
+                font-size: 11px;
+            }
         }
     }
 }

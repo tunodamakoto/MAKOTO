@@ -427,6 +427,11 @@ th {
   color: #ffffff;
   opacity: 1;
 }
+@media screen and (max-width: 520px) {
+  #top .header #header-nav > ul > li > a {
+    color: #000000;
+  }
+}
 #top .header #header-nav > ul > li > a:hover {
   opacity: 0.4;
 }

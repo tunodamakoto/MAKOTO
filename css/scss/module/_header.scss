@@ -8,6 +8,9 @@
         & #header-nav>ul>li>a{
             color: $color_white;
             opacity: 1;
+            @include responsive("smp") {
+                color: $color_black;
+            }
             &:hover{
                 opacity: .4;
             }

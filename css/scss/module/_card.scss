@@ -4,10 +4,10 @@
     margin-top: 50px;
     @include responsive("tb") {
         justify-content: space-between;
-        gap: 20px 2%;
+        gap: 30px 2%;
     }
     @include responsive("smp") {
-        gap: 20px;
+        gap: 30px;
     }
     &-item{
         width: 33.333333%;

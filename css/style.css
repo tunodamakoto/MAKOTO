@@ -906,12 +906,12 @@ th {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 20px 2%;
+    gap: 30px 2%;
   }
 }
 @media screen and (max-width: 520px) {
   .card {
-    gap: 20px;
+    gap: 30px;
   }
 }
 .card-item {

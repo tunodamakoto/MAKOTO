@@ -4,13 +4,16 @@
     &__inner{
         background-color: $color_gray_light;
         border-radius: 5px;
-        padding: 0 60px 80px;
+        padding: 0 20px 80px;
+        display: flex;
+        justify-content: center;
         @include responsive("tb") {
             padding: 0 20px 60px;
         }
     }
     &__box{
         display: inline-block;
+        max-width: 840px;
         width: 100%;
         margin-top: -26px;
         @include responsive("tb") {
@@ -94,6 +97,114 @@
         }
     }
     &-profile{
+        display: flex;
+        flex-wrap: wrap;
         margin: 100px 0 70px;
+        &__box{
+            width: 33.333333%;
+            @include responsive("tb") {
+                width: 50%;
+                display: flex;
+                align-items: flex-start;
+            }
+            &>h3{
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                @include responsive("tb") {
+                    font-size: 13px;
+                }
+                &>svg{
+                    margin-right: 8px;
+                    width: 16.5px;
+                    height: 16.925px;
+                }
+            }
+            &>ul{
+                @include responsive("tb") {
+                    padding-left: 6.37%;
+                }
+                &>li{
+                    font-size: 14px;
+                    padding-left: 15px;
+                    position: relative;
+                    @include responsive("tb") {
+                        font-size: 12px;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 2px;
+                        height: 2px;
+                        border-radius: 9999px;
+                        background: #000;
+                        left: 0;
+                        top: 12px;
+                    }
+                }
+            }
+            &:nth-child(1){
+                padding: 0 3.572% 3.572% 0;
+                background-image : radial-gradient($color_gray 30%, transparent 30%),radial-gradient($color_gray 30%, transparent 30%);
+                background-size: 6px 6px;
+                background-repeat: repeat-x, repeat-y;
+                background-position: left bottom, right bottom;
+                @include responsive("tb") {
+                    padding: 0 4.361% 4.361% 0;
+                }
+            }
+            &:nth-child(2){
+                padding: 0 3.572% 3.572%;
+                background-image : radial-gradient($color_gray 30%, transparent 30%),radial-gradient($color_gray 30%, transparent 30%);
+                background-size: 6px 6px;
+                background-repeat: repeat-x, repeat-y;
+                background-position: left bottom, right bottom;
+                @include responsive("tb") {
+                    padding: 0 0 4.361% 4.361%;
+                    background-image : radial-gradient($color_gray 30%, transparent 30%);
+                    background-size: 6px 6px;
+                    background-repeat: repeat-x;
+                    background-position: left bottom;
+                }
+            }
+            &:nth-child(3){
+                padding: 0 0 3.572% 3.572%;
+                background-image : radial-gradient($color_gray 30%, transparent 30%);
+                background-size: 6px 6px;
+                background-repeat: repeat-x;
+                background-position: left bottom;
+                @include responsive("tb") {
+                    padding: 4.361% 4.361% 4.361% 0;
+                    background-image : radial-gradient($color_gray 30%, transparent 30%),radial-gradient($color_gray 30%, transparent 30%);
+                    background-size: 6px 6px;
+                    background-repeat: repeat-x, repeat-y;
+                    background-position: left bottom, right bottom;
+                }
+            }
+            &:nth-child(4){
+                padding: 3.572% 3.572% 0 0;
+                background-image : radial-gradient($color_gray 30%, transparent 30%);
+                background-size: 6px 6px;
+                background-repeat: repeat-y;
+                background-position: right bottom;
+                @include responsive("tb") {
+                    padding: 4.361% 0 4.361% 4.361%;
+                    background-image : radial-gradient($color_gray 30%, transparent 30%);
+                    background-size: 6px 6px;
+                    background-repeat: repeat-x;
+                    background-position: left bottom;
+                }
+            }
+            &:nth-child(5){
+                padding: 3.572% 3.572% 0;
+                background-image : radial-gradient($color_gray 30%, transparent 30%);
+                background-size: 6px 6px;
+                background-repeat: repeat-y;
+                background-position: right bottom;
+                @include responsive("tb") {
+                    padding: 4.361% 4.361% 0 0;
+                }
+            }
+        }
     }
 }

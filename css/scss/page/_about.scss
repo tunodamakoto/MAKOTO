@@ -30,6 +30,9 @@
         @include responsive("tb") {
             flex-wrap: wrap-reverse;
         }
+        @include responsive("smp") {
+            margin-bottom: 50px;
+        }
         &__desc{
             width: 370px;
             @include responsive("tb") {
@@ -100,6 +103,9 @@
         display: flex;
         flex-wrap: wrap;
         margin: 100px 0 70px;
+        @include responsive("smp") {
+            margin: 70px 0;
+        }
         &__box{
             width: 33.333333%;
             @include responsive("pc") {
@@ -231,6 +237,55 @@
                     background-image: none;
                     padding: 4.361% 0 0 0;
                 }
+            }
+        }
+    }
+    &-favo{
+        padding-bottom: 80px;
+        margin-bottom: 80px;
+        border-bottom: 1px solid $color_black;
+        @include responsive("smp") {
+            padding-bottom: 70px;
+            margin-bottom: 70px;
+        }
+        &__box{
+            padding: 50px;
+            border: 1px solid $color_gray;
+            @include responsive("tb") {
+                padding: 25px;
+            }
+            &>p{
+                margin-bottom: 30px;
+                @include responsive("tb") {
+                    margin-bottom: 15px;
+                }
+                @include responsive("smp") {
+                    font-size: 12px;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &-skill{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 0;
+        margin: 60px 0 0;
+        @include responsive("smp") {
+            gap: 30px 0;
+            margin: 40px 0 0;
+        }
+        &__box{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            @include responsive("pc") {
+                width: 33.333333%;
+            }
+            @include responsive("smp") {
+                width: 50%;
             }
         }
     }

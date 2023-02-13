@@ -22,7 +22,8 @@
 }
 
 // Aboutページ
-#about+#works{
+#about,
+#works{
     &>.header{
         & #header-nav>ul>li>a{
             color: $color_black;

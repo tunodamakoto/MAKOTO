@@ -102,33 +102,44 @@
         margin: 100px 0 70px;
         &__box{
             width: 33.333333%;
-            @include responsive("tb") {
+            @include responsive("pc") {
                 width: 50%;
                 display: flex;
                 align-items: flex-start;
+            }
+            @include responsive("tb") {
+                width: 100%;
             }
             &>h3{
                 font-size: 18px;
                 font-weight: 700;
                 margin-bottom: 20px;
+                width: 100px;
                 @include responsive("tb") {
+                    width: 33.333333%;
+                }
+                @include responsive("smp") {
                     font-size: 13px;
                 }
                 &>svg{
                     margin-right: 8px;
                     width: 16.5px;
                     height: 16.925px;
+                    @include responsive("smp") {
+                        width: 14.55px;
+                        height: 14.92px;
+                    }
                 }
             }
             &>ul{
-                @include responsive("tb") {
+                @include responsive("pc") {
                     padding-left: 6.37%;
                 }
                 &>li{
                     font-size: 14px;
                     padding-left: 15px;
                     position: relative;
-                    @include responsive("tb") {
+                    @include responsive("smp") {
                         font-size: 12px;
                     }
                     &::before{
@@ -150,7 +161,8 @@
                 background-repeat: repeat-x, repeat-y;
                 background-position: left bottom, right bottom;
                 @include responsive("tb") {
-                    padding: 0 4.361% 4.361% 0;
+                    background-image: none;
+                    padding: 0 0 4.361% 0;
                 }
             }
             &:nth-child(2){
@@ -159,12 +171,15 @@
                 background-size: 6px 6px;
                 background-repeat: repeat-x, repeat-y;
                 background-position: left bottom, right bottom;
-                @include responsive("tb") {
-                    padding: 0 0 4.361% 4.361%;
+                @include responsive("pc") {
                     background-image : radial-gradient($color_gray 30%, transparent 30%);
                     background-size: 6px 6px;
                     background-repeat: repeat-x;
                     background-position: left bottom;
+                }
+                @include responsive("tb") {
+                    background-image: none;
+                    padding: 4.361% 0 4.361% 0;
                 }
             }
             &:nth-child(3){
@@ -173,12 +188,16 @@
                 background-size: 6px 6px;
                 background-repeat: repeat-x;
                 background-position: left bottom;
-                @include responsive("tb") {
-                    padding: 4.361% 4.361% 4.361% 0;
+                @include responsive("pc") {
+                    padding: 3.572% 3.572% 3.572% 0;
                     background-image : radial-gradient($color_gray 30%, transparent 30%),radial-gradient($color_gray 30%, transparent 30%);
                     background-size: 6px 6px;
                     background-repeat: repeat-x, repeat-y;
                     background-position: left bottom, right bottom;
+                }
+                @include responsive("tb") {
+                    background-image: none;
+                    padding: 4.361% 0 4.361% 0;
                 }
             }
             &:nth-child(4){
@@ -187,12 +206,16 @@
                 background-size: 6px 6px;
                 background-repeat: repeat-y;
                 background-position: right bottom;
-                @include responsive("tb") {
-                    padding: 4.361% 0 4.361% 4.361%;
+                @include responsive("pc") {
+                    padding: 3.572% 0 3.572% 3.572%;
                     background-image : radial-gradient($color_gray 30%, transparent 30%);
                     background-size: 6px 6px;
                     background-repeat: repeat-x;
                     background-position: left bottom;
+                }
+                @include responsive("tb") {
+                    background-image: none;
+                    padding: 4.361% 0 4.361% 0;
                 }
             }
             &:nth-child(5){
@@ -201,8 +224,12 @@
                 background-size: 6px 6px;
                 background-repeat: repeat-y;
                 background-position: right bottom;
+                @include responsive("pc") {
+                    padding: 3.572% 3.572% 0 0;
+                }
                 @include responsive("tb") {
-                    padding: 4.361% 4.361% 0 0;
+                    background-image: none;
+                    padding: 4.361% 0 0 0;
                 }
             }
         }

@@ -1335,7 +1335,7 @@ th {
 .about-profile__box {
   width: 33.333333%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .about-profile__box {
     width: 50%;
     display: -webkit-box;
@@ -1348,12 +1348,23 @@ th {
             align-items: flex-start;
   }
 }
+@media screen and (max-width: 768px) {
+  .about-profile__box {
+    width: 100%;
+  }
+}
 .about-profile__box > h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
+  width: 100px;
 }
 @media screen and (max-width: 768px) {
+  .about-profile__box > h3 {
+    width: 33.333333%;
+  }
+}
+@media screen and (max-width: 520px) {
   .about-profile__box > h3 {
     font-size: 13px;
   }
@@ -1363,7 +1374,13 @@ th {
   width: 16.5px;
   height: 16.925px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 520px) {
+  .about-profile__box > h3 > svg {
+    width: 14.55px;
+    height: 14.92px;
+  }
+}
+@media screen and (max-width: 960px) {
   .about-profile__box > ul {
     padding-left: 6.37%;
   }
@@ -1373,7 +1390,7 @@ th {
   padding-left: 15px;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 520px) {
   .about-profile__box > ul > li {
     font-size: 12px;
   }
@@ -1398,7 +1415,8 @@ th {
 }
 @media screen and (max-width: 768px) {
   .about-profile__box:nth-child(1) {
-    padding: 0 4.361% 4.361% 0;
+    background-image: none;
+    padding: 0 0 4.361% 0;
   }
 }
 .about-profile__box:nth-child(2) {
@@ -1409,14 +1427,19 @@ th {
   background-repeat: repeat-x, repeat-y;
   background-position: left bottom, right bottom;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .about-profile__box:nth-child(2) {
-    padding: 0 0 4.361% 4.361%;
     background-image: -webkit-radial-gradient(#999999 30%, transparent 30%);
     background-image: radial-gradient(#999999 30%, transparent 30%);
     background-size: 6px 6px;
     background-repeat: repeat-x;
     background-position: left bottom;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-profile__box:nth-child(2) {
+    background-image: none;
+    padding: 4.361% 0 4.361% 0;
   }
 }
 .about-profile__box:nth-child(3) {
@@ -1427,14 +1450,20 @@ th {
   background-repeat: repeat-x;
   background-position: left bottom;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .about-profile__box:nth-child(3) {
-    padding: 4.361% 4.361% 4.361% 0;
+    padding: 3.572% 3.572% 3.572% 0;
     background-image: -webkit-radial-gradient(#999999 30%, transparent 30%), -webkit-radial-gradient(#999999 30%, transparent 30%);
     background-image: radial-gradient(#999999 30%, transparent 30%), radial-gradient(#999999 30%, transparent 30%);
     background-size: 6px 6px;
     background-repeat: repeat-x, repeat-y;
     background-position: left bottom, right bottom;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-profile__box:nth-child(3) {
+    background-image: none;
+    padding: 4.361% 0 4.361% 0;
   }
 }
 .about-profile__box:nth-child(4) {
@@ -1445,14 +1474,20 @@ th {
   background-repeat: repeat-y;
   background-position: right bottom;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .about-profile__box:nth-child(4) {
-    padding: 4.361% 0 4.361% 4.361%;
+    padding: 3.572% 0 3.572% 3.572%;
     background-image: -webkit-radial-gradient(#999999 30%, transparent 30%);
     background-image: radial-gradient(#999999 30%, transparent 30%);
     background-size: 6px 6px;
     background-repeat: repeat-x;
     background-position: left bottom;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-profile__box:nth-child(4) {
+    background-image: none;
+    padding: 4.361% 0 4.361% 0;
   }
 }
 .about-profile__box:nth-child(5) {
@@ -1463,8 +1498,14 @@ th {
   background-repeat: repeat-y;
   background-position: right bottom;
 }
+@media screen and (max-width: 960px) {
+  .about-profile__box:nth-child(5) {
+    padding: 3.572% 3.572% 0 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .about-profile__box:nth-child(5) {
-    padding: 4.361% 4.361% 0 0;
+    background-image: none;
+    padding: 4.361% 0 0 0;
   }
 }/*# sourceMappingURL=style.css.map */

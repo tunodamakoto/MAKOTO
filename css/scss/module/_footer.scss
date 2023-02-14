@@ -1,5 +1,6 @@
 .footer{
     @include container();
+    padding: 0 20px;
     margin-top: 200px;
     margin-bottom: 40px;
     @include responsive("smp") {

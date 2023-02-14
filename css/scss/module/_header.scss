@@ -26,7 +26,9 @@
 
 // Aboutページ
 #about,
-#works{
+#works,
+#work,
+#contact{
     &>.header{
         & #header-nav>ul>li>a{
             color: $color_black;
@@ -49,6 +51,7 @@
     &__container{
         height: 80px;
         @include container();
+        padding: 0 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;

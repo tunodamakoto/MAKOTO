@@ -20,9 +20,9 @@
     <!-- header -->
     <header class="header">
         <div class="header__container">
-            <h1 class="header__logo">
+            <div class="header__logo">
                 <a href="./index.html"><svg><use xlink:href="img/base/file.svg#brack-logo"></use></svg></a>
-            </h1>
+            </div>
             <nav id="header-nav">
                 <ul>
                     <li><a href="">about</a></li>
@@ -44,7 +44,40 @@
         <section class="contact">
             <div class="contact__inner">
                 <div class="contact__box">
-                    <h2 class="page-heading">Contact</h2>
+                    <div class="page-heading">Contact</div>
+                    <div class="contact-cont">
+                        <h1 class="contact-ttl">お問い合わせ</h1>
+                        <p class="contact-text">お仕事のご依頼、クリエイティブなご相談など、<br>お気軽にお問い合わせください。お待ちしております。</p>
+                        <form action="" class="contact-form">
+                            <div class="contact-input">
+                                <label for="content" class="require">お問い合わせ内容</label>
+                                <input type="text" id="content" name="content" placeholder="webサイト制作の依頼" required>
+                            </div>
+                            <div class="contact-input">
+                                <label for="name" class="require">お名前</label>
+                                <input type="text" id="name" name="name" placeholder="角田 誠" required>
+                            </div>
+                            <div class="contact-input">
+                                <label for="furigana" class="require">ふりがな</label>
+                                <input type="text" id="furigana" name="furigana" placeholder="つのだ まこと" required>
+                            </div>
+                            <div class="contact-input">
+                                <label for="email" class="require">メールアドレス</label>
+                                <input type="email" id="email" name="email" placeholder="example@info.com" required>
+                            </div>
+                            <div class="contact-input">
+                                <label for="tel">電話番号</label>
+                                <input type="tel" id="tel" name="tel" placeholder="0000000">
+                            </div>
+                            <div class="contact-textarea">
+                                <label for="overview">お問い合わせ概要・質問など自由入力欄</label>
+                                <textarea name="overview" id="overview"></textarea>
+                            </div>
+                            <div class="contact-btn">
+                                <button class="btn-03">入力確認画面へ進む</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section><!-- contact -->

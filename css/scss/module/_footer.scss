@@ -7,6 +7,9 @@
     }
     &__image{
         margin-bottom: 15px;
+        @include responsive("smp") {
+            display: none;
+        }
         &>a{
             display: block;
             @include responsive("tb") {
@@ -38,6 +41,9 @@
         @include responsive("tb") {
             width: 100%;
             margin-bottom: 15px;
+        }
+        @include responsive("smp") {
+            display: none;
         }
         &>ul{
             display: flex;

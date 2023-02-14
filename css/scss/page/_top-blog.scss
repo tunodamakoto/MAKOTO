@@ -1,6 +1,7 @@
 // top-blog
 .top-blog{
     @include container();
+    padding: 0 20px;
     margin-top: 200px;
     @include responsive("smp") {
         margin-top: 100px;

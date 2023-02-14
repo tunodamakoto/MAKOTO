@@ -467,7 +467,6 @@ th {
   height: 80px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -919,7 +918,7 @@ th {
 }
 @media screen and (max-width: 520px) {
   .card {
-    gap: 30px;
+    margin-top: 25px;
   }
 }
 .card-item {
@@ -930,11 +929,6 @@ th {
   .card-item {
     width: 48%;
     padding: 0;
-  }
-}
-@media screen and (max-width: 520px) {
-  .card-item {
-    width: 100%;
   }
 }
 .card-item a {
@@ -1081,6 +1075,7 @@ th {
 }
 @media screen and (max-width: 520px) {
   .card__desc-main {
+    font-size: 12px;
     padding: 10px 0 0;
   }
 }
@@ -1093,6 +1088,7 @@ th {
 }
 @media screen and (max-width: 520px) {
   .card__desc-sub {
+    font-size: 12px;
     padding: 5px 0 0;
   }
 }
@@ -1106,6 +1102,7 @@ th {
 @media screen and (max-width: 520px) {
   .contact {
     margin-top: 120px;
+    padding: 0;
   }
 }
 .contact__inner {
@@ -1173,7 +1170,6 @@ th {
 .footer {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
   margin-top: 200px;
   margin-bottom: 40px;
 }
@@ -1475,6 +1471,11 @@ th {
   margin: 0 auto;
   padding: 0 20px;
   margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 0;
+  }
 }
 .about__inner {
   background-color: #F8F8F8;
@@ -1897,6 +1898,11 @@ th {
   padding: 0 20px;
   margin-top: 60px;
 }
+@media screen and (max-width: 768px) {
+  .works {
+    padding: 0;
+  }
+}
 .works__inner {
   background-color: #F8F8F8;
   border-radius: 5px;
@@ -1932,6 +1938,11 @@ th {
   margin: 0 auto;
   padding: 0 20px;
   margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 0;
+  }
 }
 .contact__inner {
   background-color: #F8F8F8;

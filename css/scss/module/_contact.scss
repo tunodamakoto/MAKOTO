@@ -1,8 +1,10 @@
 .contact{
     @include container();
+    padding: 0 20px;
     margin-top: 200px;
     @include responsive("smp") {
         margin-top: 120px;
+        padding: 0;
     }
     &__inner{
         background-color: $color_gray_light;

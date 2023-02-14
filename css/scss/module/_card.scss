@@ -7,7 +7,7 @@
         gap: 30px 2%;
     }
     @include responsive("smp") {
-        gap: 30px;
+        margin-top: 25px;
     }
     &-item{
         width: 33.333333%;
@@ -15,9 +15,6 @@
         @include responsive("tb") {
             width: 48%;
             padding: 0;
-        }
-        @include responsive("smp") {
-            width: 100%;
         }
         & a{
             position: relative;
@@ -143,6 +140,7 @@
             font-weight: 700;
             color: $color_black;
             @include responsive("smp") {
+                font-size: 12px;
                 padding: 10px 0 0;
             }
         }
@@ -153,6 +151,7 @@
             line-height: 1;
             color: $color_gray;
             @include responsive("smp") {
+                font-size: 12px;
                 padding: 5px 0 0;
             }
         }

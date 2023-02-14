@@ -1,0 +1,147 @@
+.relate{
+	display: flex;
+	justify-content: space-between;
+    max-width: 550px;
+    margin: auto;
+    &-item{
+        width: 33.333333%;
+        padding: 1.786%;
+        @include responsive("tb") {
+            width: 48%;
+            padding: 0;
+            &:last-child{
+                display: none;
+            }
+        }
+        & a{
+            position: relative;
+            @media screen and (min-width:960px) {
+                &:hover{
+                    & .relate__view{
+                        transform: translate(-34%, -50%);
+                        opacity: 1;
+                        transition-delay: 0.3s;
+                        &-more{
+                            &::before{
+                                right: -5px;
+                                transition-delay: 0.3s;
+                            }
+                            &::after{
+                                right: -5px;
+                                transition-delay: 0.3s;
+                            }
+                        }
+                        &-underline::after{
+                            transform-origin: left top;
+                            transform: scale(1, 1);
+                            transition-delay: 0.3s;
+                        }
+                    }
+                    & .relate__image::after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &__image{
+        display: block;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 100%;
+        border-radius: 5px;
+        position: relative;
+        &::after{
+            content: "";
+            background-color: rgba(0,0,0,0.3);
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.4s;
+            backface-visibility: hidden;
+        }
+        & img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+    }
+    &__view{
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transition: 0.4s;
+        transform: translate(-34%, -20%);
+        opacity: 0;
+        z-index: 1;
+        backface-visibility: hidden;
+        &-more{
+            color: $color_white;
+            font-size: 1.4rem;
+            font-family: 'Roboto Mono', monospace;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            position: relative;
+            padding-right: 20px;
+            font-weight: 700;
+            &::before{
+                width: 10px;
+                content: "";
+                height: 1px;
+                background-color: $color_white;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transition: 0.3s;
+            }
+            &::after{
+                content: "";
+                height: 1px;
+                background-color: #dadada;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transition: 0.3s;
+                width: 6px;
+                transform: rotate(45deg) translateY(-3px);
+            }
+        }
+        &-underline{
+            position: relative;
+            &::after{
+                content: "";
+                background: $color_white;
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                transform: scale(0, 1);
+                transition: transform 0.3s;
+                transform-origin: right top;
+            }
+        }
+    }
+    &__desc{
+        width: 100%;
+        &-main{
+            font-size: 12px;
+            padding: 10px 0 0;
+            font-weight: 700;
+            color: $color_black;
+        }
+        &-sub{
+            font-weight: 700;                font-size: 12px;
+            padding: 5px 0 0;
+            line-height: 1;
+            color: $color_gray;
+        }
+    }
+}

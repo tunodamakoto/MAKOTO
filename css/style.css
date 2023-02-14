@@ -2369,6 +2369,7 @@ th {
 @media screen and (max-width: 768px) {
   .contact-input input {
     font-size: 12px;
+    padding: 10px 15px;
   }
 }
 .contact-textarea {
@@ -2404,5 +2405,6 @@ th {
 @media screen and (max-width: 768px) {
   .contact-textarea textarea {
     font-size: 12px;
+    padding: 10px 15px;
   }
 }/*# sourceMappingURL=style.css.map */

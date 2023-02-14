@@ -81,6 +81,7 @@
             }
             @include responsive("tb") {
                 font-size: 12px;
+                padding: 10px 15px;
             }
         }
     }
@@ -110,6 +111,7 @@
             border-radius: 5px;
             @include responsive("tb") {
                 font-size: 12px;
+                padding: 10px 15px;
             }
         }
     }
